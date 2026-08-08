@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { WhatsAppButton } from "./components/whatsapp-button";
 import { QueixaCard } from "./components/queixa-card";
@@ -100,10 +101,14 @@ export default function Home() {
 
         <div className="hero">
           <div className="portrait">
-            <div className="portrait-ring">
-              <span>LE</span>
-            </div>
-            <span className="portrait-caption">espaço reservado — foto de perfil</span>
+            <Image
+              src="/images/luan-eduardo.jpg"
+              alt="Luan Eduardo, psicólogo clínico"
+              fill
+              priority
+              sizes="(max-width: 480px) 100vw, 480px"
+              style={{ objectPosition: "center 22%" }}
+            />
           </div>
 
           <div className="hero-quote">
