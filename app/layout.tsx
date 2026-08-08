@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Fraunces, Karla } from "next/font/google";
 import "./globals.css";
 
-const fraunces = localFont({
-  src: [
-    { path: "./fonts/fraunces-normal.woff2", weight: "300 700", style: "normal" },
-    { path: "./fonts/fraunces-italic.woff2", weight: "300 700", style: "italic" },
-  ],
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600"],
   variable: "--font-fraunces",
   display: "swap",
 });
 
-const karla = localFont({
-  src: [{ path: "./fonts/karla.woff2", weight: "300 700", style: "normal" }],
+const karla = Karla({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
   variable: "--font-karla",
   display: "swap",
 });
