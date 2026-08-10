@@ -73,7 +73,7 @@ a {
 
 .portrait {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   border-radius: 0.25rem;
   overflow: hidden;
   background: radial-gradient(circle at 30% 20%, rgba(227, 196, 129, 0.22), transparent 55%),
