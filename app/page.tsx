@@ -107,7 +107,7 @@ export default function Home() {
               fill
               priority
               sizes="(max-width: 480px) 100vw, 480px"
-              style={{ objectPosition: "center 22%" }}
+              style={{ objectPosition: "center 20%" }}
             />
           </div>
 
